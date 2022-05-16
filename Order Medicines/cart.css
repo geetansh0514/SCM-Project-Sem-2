@@ -1,0 +1,124 @@
+body{
+  background-color: #171717;;
+}
+
+
+#cart-wrap {
+  font-family: arial, sans-serif;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+#cart-products, #cart-items {
+  box-sizing: border-box;
+  padding: 10px;
+}
+#cart-products { width: 70%; }
+#cart-items { width: 30%; }
+input.cart, button.cart {
+  padding: 10px;
+  border: 0;
+  background: lightblue;
+  color: Black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* (B) PRODUCTS LIST */
+#cart-products {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+.p-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+.p-img { max-width: 150px;}
+.p-img:hover{
+  animation-name:fade; animation-duration: 2s;
+}
+.p-name, .p-price { font-weight: 700; color: whitesmoke; }
+.p-name, .p-desc, .p-price { margin: 5px 0; }
+.p-name { text-transform: uppercase; color: whitesmoke;font-family: 'Segoe UI';}
+.p-desc {
+  color: #aaa;
+  font-size: 0.9em;
+}
+.p-price { font-size: 1.35em; }
+input.p-add { width: 70%; }
+        
+.button {
+  border: none;
+  color: red;
+  font-family: 'Segoe UI';
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-style: hidden;
+  border-radius: 25px;
+  border-width: 10px;
+  animation-name : duhh;
+  animation-duration: 0.8s;
+  height:50px;width:200px;
+
+}
+
+.button:hover{
+  animation-name: uhh; animation-duration: 10s;}
+
+/* (C) CURRENT SHOPPING CART */
+#cart-items {
+  background: #31394d;
+  color: #fff;
+  border-radius: 5px;
+}
+.c-item {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-item > * { box-sizing: border-box; }
+.c-name, .c-total, input.c-empty, input.c-checkout { width: 100%; }
+.c-total, input.c-empty, input.c-checkout { margin-top: 10px; }
+.c-del { width: 25%; }
+.c-qty { width: 75%; }
+.c-total {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* (D) RESPONSIVE */
+@media screen AND (max-width: 768px) {
+  #cart-wrap { grid-template-columns: 60% 40%; }
+  #cart-products { grid-template-columns: auto; }
+}
+
+@keyframes duhh {from{background-color: #31394d;
+  color:white} to {
+  background-color: lightblue;
+  color:black;}
+  }  
+@keyframes uhh {from{
+    background-color: lightblue;
+    color:black;}
+    10%{background-color: #31394d;
+    color:white}}
+
+@keyframes fade{
+  from{
+    opacity: 1.0;
+  }
+  10%{
+    opacity: 0.3;
+  }
+  100%{
+    opacity: 0.2;
+  }
+}
