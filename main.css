@@ -1,0 +1,84 @@
+
+        
+.button {
+    border: none;
+    color: black;
+    font-family: fantasy;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-style: hidden;
+    border-radius: 25px;
+    border-width: 10px;
+    animation-name : duhh;
+    animation-duration: 0.8s;
+    height:50px;width:200px;
+  
+  }
+  
+  .button1 {background-color: turquoise;animation-name : duhht;animation-duration: 0.8s;} /* Green */
+  .button2 {background-color:  red;animation-name : duhhr;animation-duration: 0.8s;} /* Blue */
+  .button3 {background-color:  greenyellow;animation-name : duhhg;animation-duration: 0.8s;} /* Blue */
+  .button1:hover{
+      animation-name: uhht; animation-duration: 10s;animation-play-state:running;
+  }
+  .button2:hover{
+      animation-name: uhhr; animation-duration: 10s;animation-play-state:running;
+  }
+  .button3:hover{
+      animation-name: uhhg; animation-duration: 10s;animation-play-state:running;
+  }
+  img.glow{
+      animation-name: imglow; animation-duration: 5s;animation-play-state:running;animation-iteration-count:infinite; 
+  }
+  
+  @keyframes uhhg {from{
+      background-color: greenyellow;
+      color:black;}
+      10%{background-color: royalblue;
+      color:white}
+  }
+  
+  @keyframes uhhr {from{
+      background-color: red;
+      color:black;}
+      10%{background-color: royalblue;
+      color:white}
+  }
+  
+  @keyframes uhht {from{
+      background-color: turquoise;
+      color:black;}
+      10%{background-color: royalblue;
+      color:white}
+  }
+  
+  
+  @keyframes duhhg {from{background-color: royalblue;
+      color:white} to {
+      background-color: greenyellow;
+      color:black;}
+  }
+  @keyframes duhhr {from{background-color: royalblue;
+      color:white} to {
+      background-color: red;
+      color:black;}
+  }
+  @keyframes duhht {from{background-color: royalblue;
+      color:white} to {
+      background-color: turquoise;
+      color:black;}
+  }
+  @keyframes imglow {
+      from{}
+      50%{
+      box-shadow: 0 0 50px #9ecaed;}
+      100%{
+          box-shadow: 0 0 00px #9ecaed;
+      }
+  }
+      
